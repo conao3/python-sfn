@@ -11,6 +11,10 @@ sfn = "sfn.__main__:main"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+boto3 = "^1.28.65"
+
+[tool.poetry.group.dev.dependencies]
+boto3-stubs = {extras = ["stepfunctions"], version = "^1.28.65"}
 
 [build-system]
 requires = ["poetry-core"]
