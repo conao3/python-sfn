@@ -54,5 +54,5 @@ def main(args: argparse.Namespace):
 def add_subparser(subparsers: argparse._SubParsersAction) -> None:  # type: ignore
     parser = subparsers.add_parser('list-executions')
     parser.add_argument('--state-machine-arn', required=True)
-    parser.add_argument('--max-items', type=int, default=20)
+    parser.add_argument('--max-items', type=int, default=100)
     parser.set_defaults(handler=main)
